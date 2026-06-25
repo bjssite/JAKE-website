@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BRIAN's Personal Website</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f172a,#1e3a8a,#06b6d4);
+    color:white;
+}
+
+/* Navigation */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero-content span{
+    color:#38bdf8;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+    color:#0f172a;
+}
+
+/* Sections */
+section{
+    padding:80px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+/* About */
+.about{
+    background:rgba(255,255,255,0.08);
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+}
+
+/* Skills */
+.skills-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.skill{
+    width:250px;
+    background:rgba(255,255,255,0.1);
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.4s;
+}
+
+.skill:hover{
+    transform:translateY(-10px);
+    background:rgba(255,255,255,0.2);
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px;
+    font-size:18px;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.3);
+}
+.profile-pic{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #38bdf8;
+    box-shadow:0 0 25px #38bdf8;
+    margin-bottom:20px;
+    transition:0.5s;
+}
+
+
+.contact form{
+    max-width:500px;
+    margin:30px auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact input,
+.contact textarea{
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+}
+
+.contact textarea{
+    resize:none;
+}
+
+.contact button{
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#38bdf8;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact button:hover{
+    background:white;
+    color:#0f172a;
+}
+
+
+
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Brian Jake M. Tenebro</div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Hello, I'm <span>Brian</span></h1>
+          <img src="\Users\Programming\Documents\WEBSITE/PRO-1.jpg" alt="Brian" class="profile-pic">
+        <p>Aspiring Programmer & Computer Technician</p>
+        <a href="#about" class="btn">Learn More</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="title">About Me</h2>
+    <div class="about">
+        <p>
+            I am passionate about programming, web development,
+            and computer technology. I enjoy creating websites,
+            troubleshooting computer systems, and continuously
+            learning new skills to improve my technical knowledge.<br>
+            This is my personal website where I showcase my work and skills. 
+            We are passionate about technology and committed to delivering innovative solutions.
+            As programmers and technicians, we develop software, solve technical challenges,
+            and maintain computer systems to ensure they operate efficiently and reliably.
+
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="title">My Skills</h2>
+
+    <div class="skills-container">
+        <div class="skill">
+            <h3>💻 Programming</h3>
+            <p>HTML, CSS, JavaScript, and basic software development.</p>
+        </div>
+
+        <div class="skill">
+            <h3>🖥️ Computer Repair</h3>
+            <p>Installing, maintaining, and troubleshooting computers.</p>
+        </div>
+
+        <div class="skill">
+            <h3>🌐 Web Design</h3>
+            <p>Creating modern and responsive websites.</p>
+        </div>
+    
+
+   <div class="skill">
+    <h3>🎮 My Gaming Videos</h3>
+       <p> My gameplay highlights from Mobile Legends, CODM, and Roblox.</p>
+    
+</div>
+<div class="skill" >
+    <p style="text-align:center; margin-top:15px;">
+    
+   <a href="https://webapp-sg.tiktok.com/bd19fdc3661a6cb5749b559e308b24ff/6a3f7059/tos-alisg-pv-0037/okAEJAKXQWAz3eAAEWTMk7eeZfyAW8o8pGl8Gt?a=1988&bti=ODszNWYuMDE6&&bt=8679&ft=bLZkAmaLPD12NgKgWn-Uxty5VY6e3wv25-cAp&mime_type=video_mp4&rc=cnF8b2hsc2d3SkBwaHIxaDFybndmanl4OnE5cnFmOzMzODgzNUBpanl4OnE5cnFmOzMzODgzNUBjRl5Nc3FePmJKYSNvYF90aHFmOiNfcjJnMmRjaXJhLS1kLzZzYSNfcjJnMmRjaXJhLS1kLzZzcw%3D%3D&l=20260625143834DECA23F6BB375ACCF80D&ply_type=3&policy=eyJ2bSI6MywidWlkIjoiNzY1Mjk5MDgzOTc5NTc3ODU4MCJ9&btag=e00050000" style="color:white;"/>
+    <p>Tap to my highlights</p> </a>
+
+    </div>
+</section>
+
+
+<section id="contact">
+    <h2 class="title">Contact Me</h2>
+
+    <div class="contact">
+        <p>📧 Email: jakebriantenebro2009@email.com</p>
+        <p>📱 Phone: 0997-779-8089</p>
+        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl" style="color:pink"><p class="skill">📧@:</a></p>
+        <a href="https://www.facebook.com/" style="color:pink;"><p class="skill">FACEBOOK:</p></a>
+      <a href="https://github.com/" style="color:pink;"><p class="skill">GITHUB:</a></p>
+        <a href="https://www.tiktok.com" style="color:pink" /><p class="skill">TIKTOK:</a></p>
+            
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <textarea placeholder="Type your message here..." rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 BRIAN | Personal  Website</p>
+</footer>
+
+</body>
+</html>
